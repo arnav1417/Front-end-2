@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta name="viewport" content="width=device-width">
+    <title >Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="homepage.css">
+    <script>
+    </script>
+</head>
+<body>
+    <div id="recipeview" class="recipecreate">
+        <button id="reciclose" class="close">X</button>
+        <div class="whiteback">
+            <form class="forcre" name="recipeshow">
+                <div id="fordiv">
+                    <div id="photoup">
+                        <label class="imgshow"><img src="P2.jpg" alt="" ></label>
+                        <!-- <input type="file" name="img" id="imgin" style="display: none;" accept="image/*"> -->
+                    <!-- <label id="issavedlab" for="issaved"><input type="checkbox" id="issaved">Save this Recipe</label> -->
+
+                    </div>
+                    <div class="headi">
+                    <!-- <input type="text" name="recipename" id="recipename" value=""> -->
+                    <div id="selecttags">
+                    <div id="recitags"><input type="checkbox" id="veg" ><label for="veg">Vegetarian</label></div>
+                    <div id="recitags"><input type="checkbox" id="nveg" ><label for="nveg">Non-Vegetarian</label></div>
+                    <div id="recitags"><input type="checkbox" id="indian"><label for="indian" >Indian</label></div>
+                    <div id="recitags"><input type="checkbox" id="tandoori" ><label for="tandoori">Tandoori</label></div>
+                </div >
+                    </div>
+                    
+                </div>
+                <div id="recipedesc">
+                    <textarea name="recipedetail" id="recipedetail" class="recipedesctext" ></textarea>
+                </div>
+            </form>
+        </div>
+        <!-- creating the recipe views -->
+    </div>
+    <div id="accountdetail" class="recipecreate">
+        <button id="closeaccount" class="close">X</button>
+        <div class="whiteback">
+            <form id="userprofile" class="userpro">
+                <div class="fdiv">
+                    <div id="accimg">        
+                        <label class="plalab "style="margin-left:40%" for="proimg"><img id="profimg" class="Profile" src="P1.jpg"><input type="file" id="proimg" style="display: none;" accept="image/*" ><p class="tooltiptext">Click to change image</p></label>
+                    </div>
+                    <div id="acclab">
+                <input class="pla"type="text" id="uname" placeholder="Enter your name">
+                <input class="pla"type="email" id="umail" placeholder="Enter your Email">
+    <p style="font-size: large;font-family:Consolas, monaco, monospace ; height: 1%;">Change Password</p>
+                <!-- <label for="chnpsw"> -->
+                <input class="pla"type="password" id="chnpsw" placeholder="Enter new password">
+                <!-- <label for="conpwd"> -->
+                <input class="pla"  type="password" id="conpwd" placeholder="Confirm password">
+            </div>
+        </div>  
+        <button id="profbtn" class="subbtn">Update </button>
+            </form>
+        </div>
+
+    </div>
+    <div class="recipecreate" id="recipecreate">
+        <button id="closerecipe" class="close">X</button>
+        <div id ="recipeadd" class="whiteback">
+            <form class="forcre">
+                <div id="fordiv">
+                    <div id="photoup">
+                        <label class="imgshow"for="imgin"><img id="recimg" src="P2.jpg" alt=""></label>
+                        <input type="file" name="img" id="imgin" style="display: none;" accept="image/*">
+            <label id="issavedlab" for="issaved"><input type="checkbox" id="issaved">Save this Recipe</label>
+
+                    </div>
+                    <div class="headi">
+                    <input type="text" name="recipename" id="recipename" required placeholder="Give a name to your Recipe ;)">
+                    <div id="selecttags">
+                    <div id="recitags"><input type="checkbox" id="veg" ><label for="veg">Vegetarian</label></div>
+                    <div id="recitags"><input type="checkbox" id="nveg" ><label for="nveg">Non-Vegetarian</label></div>
+                    <div id="recitags"><input type="checkbox" id="indian"><label for="indian" >Indian</label></div>
+                    <div id="recitags"><input type="checkbox" id="tandoori" ><label for="tandoori">Tandoori</label></div>
+                </div >
+            </div>
+                </div>
+                <div id="recipedesc">
+                    <textarea class="recipedesctext" id="inputrecipe"></textarea>
+                    <input id="subbtn" class="subbtn" type="submit" value="Add"> 
+                    <!-- <input type="text" id="recipedesctext"> -->
+                </div>
+            </form>
+        </div>
+    </div>
+    <header id="mainhead">
+        <a href="#" id="sidecol"><img id="imglogo" src="restaurant.png"></a>
+        <p id="navlogo">Recipetopia</p>
+        <div ></div>
+        <span class="material-symbols-outlined theme" id="modeind">
+            dark_mode
+            </span>
+        <!-- <a href="#" id="modetoggle"><img src="dark-mode.png"></a> -->
+        <div id="containimg"><a id="accountclick" href="#"><img id="accountimg" src="user (1).png"></a></div>
+        <a href="/"><p id="navlogo">Log Out</p></a>
+    </header>
+    <div class="parent">
+        <div id="nav">
+            <div id="sideshow">
+                <div id="imgcont">
+                    <img src="P1.jpg" class="Profile"id="sideimg">
+                        </div>
+                    
+                <div id="resimg">
+                    <div id="siderecipe">
+                        <img id="sideimg">
+                        <img src="P1.jpg" id="sideimg">
+                        <img src="P1.jpg" id="sideimg">
+                        <img src="P1.jpg" id="sideimg">
+                        <img src="P1.jpg" id="sideimg">
+                        <img src="P1.jpg" id="sideimg">
+                        <img src="P1.jpg" id="sideimg">
+                        <img src="P1.jpg" id="sideimg">
+                        <img src="P1.jpg" id="sideimg">
+                        <img src="P1.jpg" id="sideimg">
+                        <img src="P1.jpg" id="sideimg">
+                        <img src="P1.jpg" id="sideimg">
+                        <img src="P1.jpg" id="sideimg">
+                        <img src="P1.jpg" id="sideimg">
+                        <img src="P1.jpg" id="sideimg">
+                        <img src="P1.jpg" id="sideimg">
+                        <img src="P1.jpg" id="sideimg">
+    
+                    </div>
+                </div>
+            </div>
+            <div id="account">
+                <img src="P1.jpg"  class="Profile"id="loginimg">
+                <p id="welcometext">
+                Welcome User
+                </p>
+        </div>
+            <div id="recipenav">
+                <button id="createbtn" >Create</button>
+                <div id="innernav">
+                    <!-- <a id="searchbtn" href="#">FOCUS</a> -->
+                    <a href="#">Saved Recipes</a>
+                    <a >Recently Added</a>
+                    <div id="over">
+                        <ul id="listrecipe">
+                            <!-- <a href="#">Toche</a> -->
+                            <!-- <li>This is test</li> -->
+                            <!-- <li>This is test</li> -->
+                            <!-- <li>This is test</li> -->
+                            <!-- <li>This is test</li> -->
+                            <!-- <li>This is test</li> -->
+                            <!-- <li>This is test</li> -->
+                            <!-- <li>This is test</li> -->
+                            <!-- <li>This is test</li><li>This is test</li><li>This is test</li><li>This is test</li><li>This is test</li><li>This is test</li><li>This is test</li><li>This is test</li><li>This is test</li><li>This is test</li><li>This is test</li><li>This is test</li><li>This is test</li><li>This is test</li><li>This is test</li><li>This is test</li><li>This is test</li><li>This is test</li><li>This is test</li><li>This is test</li><li>This is test</li><li>This is test</li><li>This is test</li><li>This is test</li><li>This is test</li> -->
+                        </ul> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="content">
+            <div id="searchbar">
+                <form id="searchform" action="">
+                    <input id="search" type="text" placeholder="Search for recipes ;)"> 
+                    <!-- <button id="searbtn" type="submit">Search</button>  -->
+                </form>
+            </div>
+            <div id="recipeshowcase">
+                <div class="recipecontent">
+                    <div class="reps"><p class="fu" id="checki">This is sample text for this respective image</p><img src="recipie1.jpeg"></div>
+                    <div class="reps"><p class="fu">This is sample text for this respective image</p><img src="recipie2.jpeg" ></div>
+                    <div class="reps"><p class="fu">This is sample text for this respective image</p><img src="recipie3.jpeg" ></div>
+                    <div class="reps"><p class="fu">This is sample text for this respective image</p><img src="recipie4.jpeg" ></div>
+                    <div class="reps"><p class="fu">This is sample text for this respective image</p><img src="recipie5.jpeg" ></div>
+                    <div class="reps"><p class="fu">This is sample text for this respective image</p><img src="recipie6.jpeg" ></div>
+                    <div class="reps"><p class="fu" id="check">This is sample text for this respective image</p><img src="recipie1.jpeg" ></div>
+                    <div class="reps"><p class="fu">This is sample text for this respective image</p><img src="recipie1.jpeg" ></div>
+                    <div class="reps"><p class="fu">This is sample text for this respective image</p><img src="recipie1.jpeg" ></div>
+                    <div class="reps"><p class="fu" id="check">This is sample text for this respective image</p><img src="recipie1.jpeg" ></div>
+                    <div class="reps"><p class="fu">This is sample text for this respective image</p><img src="recipie1.jpeg"> </div>
+                    <div class="reps"><p class="fu">This is sample text for this respective image</p><img src="recipie1.jpeg" > </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="createbotbtn"> ADD</button>
+</body>
+<script src="recipe.js"></script>
+</html>
